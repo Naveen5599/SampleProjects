@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>
+		HOME
+	</title>
+	<style>
+		body{
+			background:url("https://ak0.picdn.net/shutterstock/videos/15897730/thumb/4.jpg?i10c=img.resize(height:160)") no-repeat ;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		header{
+			background-color: black;
+			height: 65px;
+			opacity: .9;
+		}
+		h3{
+			text-decoration-color: white;		}
+	</style>
+</head>
+
+<body>
+	<header><b><font color="white" size="25"><center>TOP TEN</center></font></b></header>
+	%for i in range(len(top_news["Top 10 news"])):
+		<h3><a href="{{top_news["Top 10 news"][i]["link"]}}">{{top_news["Top 10 news"][i]["title"]}}</a></h3>
+		<h5>{{top_news["Top 10 news"][i]["source"]}}</h5>
+	%end
+
+
+</body>
+</html>
