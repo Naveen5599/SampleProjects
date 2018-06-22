@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>
+		NEWS
+	</title>
+	<style>
+		body{
+			background:url(https://ak4.picdn.net/shutterstock/videos/15204214/thumb/4.jpg) no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		header{
+			background-color: black;
+			height: 65px;
+			opacity: 0.9;
+		}
+	</style>
+
+</head>
+<body>
+	<header><font color="white" size="25"><center>HEADLINES</center></font></header>
+	%for i in range(len(all_news["All Breaking News"])):
+		<h3><a href="{{all_news["All Breaking News"][i]["link"]}}">{{all_news["All Breaking News"][i]["title"]}}</a></h3>
+		<h5>{{all_news["All Breaking News"][i]["source"]}}</h5>
+	%end
+
+
+</body>
+</html>
