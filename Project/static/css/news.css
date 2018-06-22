@@ -1,0 +1,146 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(abc.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.menu-icon{
+   position: fixed;
+   top: 20px;
+   left: 30px;
+   width: 35px;
+   height: 25px;
+   padding: 2px 0px;
+   background:white;
+   box-sizing: content-box;
+   cursor: auto;
+}
+.menu-icon span
+{
+  width: 100%;
+  height: 3px;
+  display: block;
+  background: black;
+  margin: 4px 0;
+  transition: .4s;
+}
+.logo {
+      line-height: 20px;
+      position: fixed;
+      float: top;
+      margin: 30px 20px;
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: left;
+      letter-spacing: 2px;
+}
+
+.sidebar
+{
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background:black;
+  transition: .5s;
+  padding:30px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+.sidebar li
+{
+  font-size: 80px;
+  width: 40px;
+  height: 30px;
+
+}
+.sidebar li a
+{
+  color:white;
+  text-decoration: none;
+  padding: 1px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+.sidebar.active
+{
+  left: 0;
+}
+.sidebar .menu
+{
+  margin: 0;
+  padding: 40px 0;
+}
+.sidebar .menu li
+{
+  list-style: none;
+  font-family: sans-serif;
+}
+.sidebar .menu li a
+{
+  display: contents;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color:white;
+  font-size: 30px;
+  text-decoration: none;
+
+}
+.sidebar.menu li a:hover
+{
+  background: darkorange;
+  color:black;
+}
+
+.menu-icon.active span
+{
+  position: absolute;
+  width: calc(110% - 14px);
+  top: calc(50% - 8px);
+}
+.menu-icon.active span:nth-child(1)
+{
+   transform:rotate(45deg);
+}
+.menu-icon.active span:nth-child(3)
+{
+   transform:rotate(-45deg);
+}
+.menu-icon.active span:nth-child(2)
+{
+   display: none;
+}
+.social-icon
+{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  width: 95%;
+  padding: 3px 10px;
+  box-sizing: content-box;
+}
+.social-icon li
+{
+  width: 50%;
+  text-align:justify;
+  list-style: none;
+}
+.social-icon li a
+{
+  display: inline-block;
+  font-size:25px;
+  color: darkorange;
+  width: 10px;
+  height: 40px;
+  text-align:justify;
+  line-height: 50px;
+  border-radius: 30%;
+}
