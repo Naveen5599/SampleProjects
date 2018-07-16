@@ -1,4 +1,5 @@
-N E W S AGGREGATOR
+#NEWS AGGREGATOR
+
 News aggregators capably handle the large amount of news that is published nowadays. However, these systems focus on the presentation of important, common information in news, but do not reveal different perspectives on the same topic. Thus, current news aggregators suffer from media bias, i.e. differences in the content or presentation of news.
 Finding such differences is crucial to reduce the effects of media bias. A news aggregator, also termed a feed aggregator, feed reader, news reader, RSS reader or simply aggregator, is client software or a web application which aggregates syndicated web content such as online newspapers, blogs, podcasts, and video blogs (vlogs) in one location for easy viewing. 
 
